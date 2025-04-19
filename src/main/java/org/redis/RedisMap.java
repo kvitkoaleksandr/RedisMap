@@ -2,12 +2,9 @@ package org.redis;
 
 import redis.clients.jedis.Jedis;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.*;
 
 public class RedisMap implements Map<String, String> {
-
     private final Jedis jedis;
 
     public RedisMap() {

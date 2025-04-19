@@ -24,8 +24,6 @@ class RedisMapTest {
         redisMap.close();
     }
 
-    // ========== Позитивные тесты ==========
-
     @Test
     void putAndGetTest() {
         redisMap.put("language", "Java");
@@ -98,8 +96,6 @@ class RedisMapTest {
         redisMap.clear();
         assertTrue(redisMap.isEmpty());
     }
-
-    // ========== Негативные тесты ==========
 
     @Test
     void getNullKeyTest() {
